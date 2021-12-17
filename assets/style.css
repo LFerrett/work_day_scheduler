@@ -14,8 +14,10 @@ textarea {
 }
 
 .jumbotron {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: bolder;
   text-align: center;
-  background-color: transparent;
+  background-color: cornflowerblue; 
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
@@ -30,7 +32,6 @@ textarea {
   border-radius: 15px;
 }
 
-
 .row {
   white-space: pre-wrap;
   height: 80px;
@@ -41,6 +42,7 @@ textarea {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
+  padding: 10px;
 }
 
 .past {
@@ -49,12 +51,12 @@ textarea {
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: #fc87aa;
   color: white;
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: #a5eea5;
   color: white;
 }
 
@@ -62,7 +64,7 @@ textarea {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06aed5;
+  background-color: #245b75;
   color: white;
 }
 

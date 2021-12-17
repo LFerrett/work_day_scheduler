@@ -1,9 +1,12 @@
 // Utilizes moment.js to set what day it is
 var todayIs = moment();
 
-// 
+// function to have jQuery detect the state of readiness and will only run once the DOM is ready for JavaScript code to execute
 $(document).ready(function(){
+    // captures the current date and time and places it in the jumbotron
     $("#todayIs").text(todayIs.format("MMMM Do, YYYY"));
+
+    // initilizes the save button to save anything captured inside
     $(".saveBtn").on("click", function(){
         var plannerText = $(this).siblings(".makeNum").val();
         var time = $(this).parent().attr("id");
@@ -22,6 +25,7 @@ $(document).ready(function(){
     $("#17 .makeNum").val(localStorage.getItem("17"));
     $("#18 .makeNum").val(localStorage.getItem("18"));
 
+    // Checks the current hour and then assigns colors using CSS id of each time block if its in the past, present or future
     function timeChange(){
         var currentHour = moment().hour();
         
